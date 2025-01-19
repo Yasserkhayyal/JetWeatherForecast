@@ -1,3 +1,16 @@
 # Default ignored files
+/inspectionProfiles/
 /shelf/
+/compiler.xml
+/gradle.xml
+/hdbnavigator.xml
+/kotlinc.xml
+/markdown-navigator.xml
+/markdown-navigator-enh.xml
+/migrations.xml
+/misc.xml
+/.name
+/runConfigurations.xml
+/vcs.xml
 /workspace.xml
+/deploymentTargetSelector.xml
