@@ -4,9 +4,14 @@ import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.IconToggleButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
@@ -22,8 +27,10 @@ import com.bawp.jetweatherforecast.model.Unit
 import com.bawp.jetweatherforecast.widgets.WeatherAppBar
 
 @Composable
-fun SettingsScreen(navController: NavController,
-                  settingsViewModel: SettingsViewModel = hiltViewModel()) {
+fun SettingsScreen(
+    navController: NavController,
+    settingsViewModel: SettingsViewModel = hiltViewModel()
+) {
 
     var unitToggleState by remember { mutableStateOf(false) }
     val measurementUnits = listOf("Imperial (F)", "Metric (C)")
@@ -41,21 +48,28 @@ fun SettingsScreen(navController: NavController,
             title = "Settings",
             icon = Icons.Default.ArrowBack,
             false,
-            navController = navController){
+            navController = navController
+        ) {
             navController.popBackStack()
         }
-    }) {
-        Surface(modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight()) {
-            Column(verticalArrangement = Arrangement.Center,
-                  horizontalAlignment = Alignment.CenterHorizontally) {
+    }) { contentPadding ->
+        Surface(
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight()
+                .padding(contentPadding)
+        ) {
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
                 Text(
                     text = "Change Units of Measurement",
                     modifier = Modifier.padding(bottom = 15.dp)
-                    )
+                )
 
-                IconToggleButton(checked = !unitToggleState ,
+                IconToggleButton(
+                    checked = !unitToggleState,
                     onCheckedChange = {
                         unitToggleState = !it
                         choiceState = if (unitToggleState) {
@@ -69,36 +83,35 @@ fun SettingsScreen(navController: NavController,
                         .fillMaxWidth(0.5f)
                         .clip(shape = RectangleShape)
                         .padding(5.dp)
-                        .background(Color.Magenta.copy(alpha = 0.4f))) {
-                    
-                     Text(text = if (unitToggleState) "Fahrenheit ºF" else "Celsius ºC" )
+                        .background(Color.Magenta.copy(alpha = 0.4f))
+                ) {
+
+                    Text(text = if (unitToggleState) "Fahrenheit ºF" else "Celsius ºC")
 
 
                 }
-                Button(onClick = {
-                                 settingsViewModel.deleteAllUnits()
-                    settingsViewModel.insertUnit(Unit(unit = choiceState ))
+                Button(
+                    onClick = {
+                        settingsViewModel.deleteAllUnits()
+                        settingsViewModel.insertUnit(Unit(unit = choiceState))
 
-                },
-                      modifier = Modifier
-                          .padding(3.dp)
-                          .align(CenterHorizontally),
-                      shape = RoundedCornerShape(34.dp),
-                      colors = ButtonDefaults.buttonColors(
-                          backgroundColor = Color(0xFFEFBE42)
-                                                          )) {
-                      Text(text = "Save",
-                          modifier = Modifier.padding(4.dp),
-                          color = Color.White,
-                          fontSize = 17.sp)
-
+                    },
+                    modifier = Modifier
+                        .padding(3.dp)
+                        .align(CenterHorizontally),
+                    shape = RoundedCornerShape(34.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFFEFBE42)
+                    )
+                ) {
+                    Text(
+                        text = "Save",
+                        modifier = Modifier.padding(4.dp),
+                        color = Color.White,
+                        fontSize = 17.sp
+                    )
                 }
-
-
             }
         }
-
-
     }
-
 }

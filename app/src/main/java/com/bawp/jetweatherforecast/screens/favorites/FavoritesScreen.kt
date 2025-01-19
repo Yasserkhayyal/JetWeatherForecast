@@ -6,10 +6,14 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
-import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.rounded.Delete
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
@@ -30,9 +34,9 @@ fun FavoritesScreen(navController: NavController,
         icon = Icons.Default.ArrowBack,
         false,
         navController = navController) { navController.popBackStack() }
-    }) {
+    }) { contentPadding ->
         Surface(modifier = Modifier
-            .padding(5.dp)
+            .padding(contentPadding)
             .fillMaxWidth()) {
             Column(verticalArrangement = Arrangement.Center,
                   horizontalAlignment = Alignment.CenterHorizontally) {
@@ -79,7 +83,7 @@ fun CityRow(
                                              color = Color(0xFFD1E3E1)) {
                 Text(text = favorite.country,
                     modifier = Modifier.padding(4.dp),
-                    style = MaterialTheme.typography.caption)
+                    style = MaterialTheme.typography.labelSmall)
 
             }
             Icon(imageVector = Icons.Rounded.Delete, contentDescription = "delete",
@@ -89,10 +93,5 @@ fun CityRow(
                 },
                 tint = Color.Red.copy(alpha = 0.3f))
         }
-        
-        
     }
-    
-
-
 }
