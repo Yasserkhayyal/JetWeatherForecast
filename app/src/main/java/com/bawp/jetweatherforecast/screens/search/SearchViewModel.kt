@@ -2,7 +2,7 @@ package com.bawp.jetweatherforecast.screens.search
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.bawp.jetweatherforecast.data.DataOrException
+import com.bawp.jetweatherforecast.data.model.DataOrException
 import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
 import com.bawp.jetweatherforecast.domain.usecase.search.SearchUseCase
 import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel

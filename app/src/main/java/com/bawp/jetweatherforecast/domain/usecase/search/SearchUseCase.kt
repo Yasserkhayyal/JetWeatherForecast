@@ -1,6 +1,6 @@
 package com.bawp.jetweatherforecast.domain.usecase.search
 
-import com.bawp.jetweatherforecast.data.DataOrException
+import com.bawp.jetweatherforecast.data.model.DataOrException
 import com.bawp.jetweatherforecast.domain.repository.SearchRepository
 import com.bawp.jetweatherforecast.domain.mappers.GeoLocationItemUIModelMapper
 import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel

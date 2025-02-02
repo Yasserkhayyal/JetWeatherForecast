@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.screens.main
 
 import androidx.lifecycle.ViewModel
-import com.bawp.jetweatherforecast.data.DataOrException
+import com.bawp.jetweatherforecast.data.model.DataOrException
 import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
 import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCase
 import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel

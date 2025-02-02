@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.data.repository.search
 
 import android.util.Log
-import com.bawp.jetweatherforecast.data.DataOrException
+import com.bawp.jetweatherforecast.data.model.DataOrException
 import com.bawp.jetweatherforecast.domain.repository.SearchRepository
 import com.bawp.jetweatherforecast.data.model.locations.GeoLocationItem
 import com.bawp.jetweatherforecast.data.network.WeatherApi

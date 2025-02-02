@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.data
+package com.bawp.jetweatherforecast.data.model
 
 class DataOrException<T, Boolean, E: Exception>(
     var data: T? = null,
