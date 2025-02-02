@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.di
+package com.bawp.jetweatherforecast.data.di
 
 import android.content.Context
 import android.util.Log

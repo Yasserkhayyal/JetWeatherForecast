@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.di
+package com.bawp.jetweatherforecast.domain.di
 
 import com.bawp.jetweatherforecast.domain.WeatherDataUseCase
 import com.bawp.jetweatherforecast.domain.WeatherDataUseCaseImp
