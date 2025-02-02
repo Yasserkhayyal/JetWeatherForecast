@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.data
+package com.bawp.jetweatherforecast.data.db
 
 import androidx.room.Dao
 import androidx.room.Delete

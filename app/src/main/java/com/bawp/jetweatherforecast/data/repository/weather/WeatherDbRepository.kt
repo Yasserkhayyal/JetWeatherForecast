@@ -1,6 +1,6 @@
 package com.bawp.jetweatherforecast.data.repository.weather
 
-import com.bawp.jetweatherforecast.data.WeatherDao
+import com.bawp.jetweatherforecast.data.db.WeatherDao
 import com.bawp.jetweatherforecast.data.model.favorite.Favorite
 import com.bawp.jetweatherforecast.data.model.favorite.Unit
 import kotlinx.coroutines.flow.Flow

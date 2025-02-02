@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.data
+package com.bawp.jetweatherforecast.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
