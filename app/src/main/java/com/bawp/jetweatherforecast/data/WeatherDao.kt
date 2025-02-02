@@ -1,7 +1,11 @@
 package com.bawp.jetweatherforecast.data
 
-import androidx.room.*
-import com.bawp.jetweatherforecast.model.City
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
 import com.bawp.jetweatherforecast.model.Favorite
 import com.bawp.jetweatherforecast.model.Unit
 import kotlinx.coroutines.flow.Flow
@@ -11,8 +15,8 @@ interface WeatherDao {
     @Query("SELECT * from fav_tbl")
     fun getFavorites(): Flow<List<Favorite>>
 
-    @Query("SELECT * from fav_tbl where city =:city")
-    suspend fun getFavById(city: String): Favorite
+    @Query("SELECT * from fav_tbl where lat =:lat and lon = :lon")
+    suspend fun getFavById(lat: String, lon: String): Favorite
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFavorite(favorite: Favorite)

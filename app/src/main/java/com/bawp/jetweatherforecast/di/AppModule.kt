@@ -1,9 +1,16 @@
 package com.bawp.jetweatherforecast.di
 
 import android.content.Context
+import android.util.Log
+import androidx.datastore.core.DataStore
+import androidx.datastore.core.DataStoreFactory
+import androidx.datastore.core.handlers.ReplaceFileCorruptionHandler
+import androidx.datastore.dataStoreFile
 import androidx.room.Room
+import com.bawp.jetweatherforecast.GeoLocationStoreModel
 import com.bawp.jetweatherforecast.data.WeatherDao
 import com.bawp.jetweatherforecast.data.WeatherDatabase
+import com.bawp.jetweatherforecast.domain.GeoLocationStoreModelSerializer
 import com.bawp.jetweatherforecast.network.WeatherApi
 import com.bawp.jetweatherforecast.utils.Constants
 import dagger.Module
@@ -19,20 +26,21 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class AppModule {
 
-    @Singleton
     @Provides
-    fun provideWeatherDao(weatherDatabase: WeatherDatabase): WeatherDao
-    = weatherDatabase.weatherDao()
+    @Singleton
+    fun provideWeatherDao(weatherDatabase: WeatherDatabase): WeatherDao =
+        weatherDatabase.weatherDao()
 
-    @Singleton
     @Provides
-    fun provideAppDatabase(@ApplicationContext context: Context): WeatherDatabase
-     = Room.databaseBuilder(
-          context,
-          WeatherDatabase::class.java,
-          "weather_database")
-        .fallbackToDestructiveMigration()
-        .build()
+    @Singleton
+    fun provideAppDatabase(@ApplicationContext context: Context): WeatherDatabase =
+        Room.databaseBuilder(
+            context,
+            WeatherDatabase::class.java,
+            "weather_database"
+        )
+            .fallbackToDestructiveMigration()
+            .build()
 
     @Provides
     @Singleton
@@ -44,11 +52,18 @@ class AppModule {
             .create(WeatherApi::class.java)
     }
 
-
-
-
-
-
-
-
+    @Provides
+    @Singleton
+    fun provideGeoLocationDataStore(@ApplicationContext applicationContext: Context): DataStore<GeoLocationStoreModel> =
+        DataStoreFactory.create(
+            serializer = GeoLocationStoreModelSerializer,
+            corruptionHandler = ReplaceFileCorruptionHandler {
+                Log.d(
+                    DataStoreFactory::class.java.simpleName,
+                    "selected geo location preferences file corrupted"
+                )
+                GeoLocationStoreModel.getDefaultInstance()
+            },
+            produceFile = { applicationContext.dataStoreFile("selected_geo_location.pb") }
+        )
 }

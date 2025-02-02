@@ -9,8 +9,12 @@ import androidx.room.PrimaryKey
 data class Favorite(
     @NonNull
     @PrimaryKey
-    @ColumnInfo(name = "city")
-    val city: String,
+    @ColumnInfo(name = "locationQuery")
+    val locationQuery: String,
 
-    @ColumnInfo(name = "country")
-    val country: String)
+    @ColumnInfo(name = "lat")
+    val lat: String,
+
+    @ColumnInfo(name = "lon")
+    val lon: String
+)

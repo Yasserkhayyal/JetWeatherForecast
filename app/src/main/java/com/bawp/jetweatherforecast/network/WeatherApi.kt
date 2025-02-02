@@ -1,8 +1,7 @@
 package com.bawp.jetweatherforecast.network
 
-import com.bawp.jetweatherforecast.model.Weather
-import com.bawp.jetweatherforecast.model.WeatherObject
-import com.bawp.jetweatherforecast.utils.Constants
+import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
+import com.bawp.jetweatherforecast.model.weather.OneCallWeather
 import com.bawp.jetweatherforecast.utils.Constants.API_KEY
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -10,10 +9,20 @@ import javax.inject.Singleton
 
 @Singleton
 interface WeatherApi {
-    @GET(value = "data/2.5/forecast/daily")
-    suspend fun getWeather(
-        @Query("q") query : String,
-        @Query("units") units: String = "imperial",
+    @GET(value = "geo/1.0/direct")
+    suspend fun getGeoLocations(
+        @Query("q") query: String,
+        @Query("limit") limit: String = "5",
         @Query("appid") appid: String = API_KEY // your api key
-                          ): Weather
+    ): List<GeoLocationItem>
+
+    @GET(value = "data/3.0/onecall")
+    suspend fun getWeather(
+        @Query("lat") lat: String,
+        @Query("lon") lon: String,
+        @Query("exclude") exclude: String = "minutely,hourly,alerts",
+        @Query("units") units: String = "imperial",
+        @Query("lang") lang: String = "en",
+        @Query("appid") appid: String = API_KEY // your api key
+    ): OneCallWeather
 }
