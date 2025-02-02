@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.domain.di
 
-import com.bawp.jetweatherforecast.domain.WeatherDataUseCase
-import com.bawp.jetweatherforecast.domain.WeatherDataUseCaseImp
+import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCase
+import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCaseImp
 import com.bawp.jetweatherforecast.domain.repository.WeatherRepository
 import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapper
 import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapperImp

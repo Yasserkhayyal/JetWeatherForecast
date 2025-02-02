@@ -1,8 +1,8 @@
 package com.bawp.jetweatherforecast.domain.di
 
 import com.bawp.jetweatherforecast.domain.repository.DataStoreRepository
-import com.bawp.jetweatherforecast.domain.DataStoreUseCase
-import com.bawp.jetweatherforecast.domain.DataStoreUseCaseImp
+import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
+import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCaseImp
 import com.bawp.jetweatherforecast.data.repository.datastore.DataStoreRepositoryImp
 import dagger.Binds
 import dagger.Module

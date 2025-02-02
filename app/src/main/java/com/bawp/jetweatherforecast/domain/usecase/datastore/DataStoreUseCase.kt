@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.domain
+package com.bawp.jetweatherforecast.domain.usecase.datastore
 
 import com.bawp.jetweatherforecast.domain.repository.DataStoreRepository
 import com.bawp.jetweatherforecast.model.Favorite

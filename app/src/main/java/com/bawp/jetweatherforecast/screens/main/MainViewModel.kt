@@ -2,8 +2,8 @@ package com.bawp.jetweatherforecast.screens.main
 
 import androidx.lifecycle.ViewModel
 import com.bawp.jetweatherforecast.data.DataOrException
-import com.bawp.jetweatherforecast.domain.DataStoreUseCase
-import com.bawp.jetweatherforecast.domain.WeatherDataUseCase
+import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
+import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCase
 import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel

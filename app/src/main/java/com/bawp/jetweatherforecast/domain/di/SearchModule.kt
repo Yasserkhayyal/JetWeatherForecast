@@ -1,8 +1,8 @@
 package com.bawp.jetweatherforecast.domain.di
 
 import com.bawp.jetweatherforecast.domain.repository.SearchRepository
-import com.bawp.jetweatherforecast.domain.SearchUseCase
-import com.bawp.jetweatherforecast.domain.SearchUseCaseImp
+import com.bawp.jetweatherforecast.domain.usecase.search.SearchUseCase
+import com.bawp.jetweatherforecast.domain.usecase.search.SearchUseCaseImp
 import com.bawp.jetweatherforecast.mappers.GeoLocationItemUIModelMapper
 import com.bawp.jetweatherforecast.mappers.GeoLocationItemUiModelMapperImp
 import com.bawp.jetweatherforecast.data.repository.search.SearchRepositoryImp

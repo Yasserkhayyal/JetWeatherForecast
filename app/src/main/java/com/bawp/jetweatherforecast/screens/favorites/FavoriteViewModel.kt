@@ -2,7 +2,7 @@ package com.bawp.jetweatherforecast.screens.favorites
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.bawp.jetweatherforecast.domain.DataStoreUseCase
+import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
 import com.bawp.jetweatherforecast.model.Favorite
 import com.bawp.jetweatherforecast.data.repository.weather.WeatherDbRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
