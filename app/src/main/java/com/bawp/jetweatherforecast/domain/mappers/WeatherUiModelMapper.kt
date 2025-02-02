@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.mappers
+package com.bawp.jetweatherforecast.domain.mappers
 
 import com.bawp.jetweatherforecast.model.weather.OneCallWeather
 import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel

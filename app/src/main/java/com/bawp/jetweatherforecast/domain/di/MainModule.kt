@@ -3,8 +3,8 @@ package com.bawp.jetweatherforecast.domain.di
 import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCase
 import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCaseImp
 import com.bawp.jetweatherforecast.domain.repository.WeatherRepository
-import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapper
-import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapperImp
+import com.bawp.jetweatherforecast.domain.mappers.WeatherUiModelMapper
+import com.bawp.jetweatherforecast.domain.mappers.WeatherUiModelMapperImp
 import com.bawp.jetweatherforecast.data.repository.weather.WeatherRepositoryImp
 import dagger.Binds
 import dagger.Module

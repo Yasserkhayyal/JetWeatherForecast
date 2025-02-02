@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.mappers
+package com.bawp.jetweatherforecast.domain.mappers
 
 import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
 import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
