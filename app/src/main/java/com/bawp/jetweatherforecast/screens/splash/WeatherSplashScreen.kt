@@ -49,9 +49,6 @@ fun WeatherSplashScreen(navController: NavController) {
         navController.navigate(WeatherScreens.MainScreen.name)
     })
 
-
-
-
     Surface(
         modifier = Modifier
             .padding(15.dp)

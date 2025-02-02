@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.repository
+package com.bawp.jetweatherforecast.data.repository
 
 import android.util.Log
 import androidx.datastore.core.DataStore

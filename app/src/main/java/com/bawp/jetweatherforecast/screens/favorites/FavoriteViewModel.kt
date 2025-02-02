@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bawp.jetweatherforecast.domain.DataStoreUseCase
 import com.bawp.jetweatherforecast.model.Favorite
-import com.bawp.jetweatherforecast.repository.WeatherDbRepository
+import com.bawp.jetweatherforecast.data.repository.WeatherDbRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

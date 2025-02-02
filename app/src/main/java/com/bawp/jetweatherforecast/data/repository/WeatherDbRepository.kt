@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.repository
+package com.bawp.jetweatherforecast.data.repository
 
 import com.bawp.jetweatherforecast.data.WeatherDao
 import com.bawp.jetweatherforecast.model.Favorite

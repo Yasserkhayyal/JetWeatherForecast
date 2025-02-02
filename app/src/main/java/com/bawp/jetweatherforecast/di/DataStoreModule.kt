@@ -3,7 +3,7 @@ package com.bawp.jetweatherforecast.di
 import com.bawp.jetweatherforecast.domain.DataStoreRepository
 import com.bawp.jetweatherforecast.domain.DataStoreUseCase
 import com.bawp.jetweatherforecast.domain.DataStoreUseCaseImp
-import com.bawp.jetweatherforecast.repository.DataStoreRepositoryImp
+import com.bawp.jetweatherforecast.data.repository.DataStoreRepositoryImp
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
