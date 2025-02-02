@@ -4,7 +4,7 @@ import android.util.Log
 import com.bawp.jetweatherforecast.data.DataOrException
 import com.bawp.jetweatherforecast.domain.repository.WeatherRepository
 import com.bawp.jetweatherforecast.model.weather.OneCallWeather
-import com.bawp.jetweatherforecast.network.WeatherApi
+import com.bawp.jetweatherforecast.data.network.WeatherApi
 import javax.inject.Inject
 
 class WeatherRepositoryImp @Inject constructor(private val weatherApi: WeatherApi) :

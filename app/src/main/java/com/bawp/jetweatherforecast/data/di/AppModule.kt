@@ -11,7 +11,7 @@ import com.bawp.jetweatherforecast.GeoLocationStoreModel
 import com.bawp.jetweatherforecast.data.WeatherDao
 import com.bawp.jetweatherforecast.data.WeatherDatabase
 import com.bawp.jetweatherforecast.domain.GeoLocationStoreModelSerializer
-import com.bawp.jetweatherforecast.network.WeatherApi
+import com.bawp.jetweatherforecast.data.network.WeatherApi
 import com.bawp.jetweatherforecast.utils.Constants
 import dagger.Module
 import dagger.Provides

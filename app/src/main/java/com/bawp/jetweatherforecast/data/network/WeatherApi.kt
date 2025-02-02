@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.network
+package com.bawp.jetweatherforecast.data.network
 
 import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
 import com.bawp.jetweatherforecast.model.weather.OneCallWeather
