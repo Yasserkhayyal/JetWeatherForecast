@@ -5,7 +5,7 @@ import com.bawp.jetweatherforecast.domain.WeatherDataUseCaseImp
 import com.bawp.jetweatherforecast.domain.WeatherRepository
 import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapper
 import com.bawp.jetweatherforecast.mappers.WeatherUiModelMapperImp
-import com.bawp.jetweatherforecast.data.repository.WeatherRepositoryImp
+import com.bawp.jetweatherforecast.data.repository.weather.WeatherRepositoryImp
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

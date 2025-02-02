@@ -5,7 +5,7 @@ import com.bawp.jetweatherforecast.domain.SearchUseCase
 import com.bawp.jetweatherforecast.domain.SearchUseCaseImp
 import com.bawp.jetweatherforecast.mappers.GeoLocationItemUIModelMapper
 import com.bawp.jetweatherforecast.mappers.GeoLocationItemUiModelMapperImp
-import com.bawp.jetweatherforecast.data.repository.SearchRepositoryImp
+import com.bawp.jetweatherforecast.data.repository.search.SearchRepositoryImp
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

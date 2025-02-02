@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.data.repository
+package com.bawp.jetweatherforecast.data.repository.weather
 
 import android.util.Log
 import com.bawp.jetweatherforecast.data.DataOrException

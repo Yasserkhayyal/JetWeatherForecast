@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bawp.jetweatherforecast.model.Unit
-import com.bawp.jetweatherforecast.data.repository.WeatherDbRepository
+import com.bawp.jetweatherforecast.data.repository.weather.WeatherDbRepository
 import com.bawp.jetweatherforecast.utils.Constants.IMPERIAL
 import com.bawp.jetweatherforecast.utils.Constants.METRIC
 import dagger.hilt.android.lifecycle.HiltViewModel
