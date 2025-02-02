@@ -2,7 +2,7 @@ package com.bawp.jetweatherforecast.data.repository.search
 
 import android.util.Log
 import com.bawp.jetweatherforecast.data.DataOrException
-import com.bawp.jetweatherforecast.domain.SearchRepository
+import com.bawp.jetweatherforecast.domain.repository.SearchRepository
 import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
 import com.bawp.jetweatherforecast.network.WeatherApi
 import javax.inject.Inject

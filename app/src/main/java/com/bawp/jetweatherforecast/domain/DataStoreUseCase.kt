@@ -1,5 +1,6 @@
 package com.bawp.jetweatherforecast.domain
 
+import com.bawp.jetweatherforecast.domain.repository.DataStoreRepository
 import com.bawp.jetweatherforecast.model.Favorite
 import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
 import kotlinx.coroutines.flow.Flow

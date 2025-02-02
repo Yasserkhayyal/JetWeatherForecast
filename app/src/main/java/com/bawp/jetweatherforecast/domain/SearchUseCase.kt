@@ -1,6 +1,7 @@
 package com.bawp.jetweatherforecast.domain
 
 import com.bawp.jetweatherforecast.data.DataOrException
+import com.bawp.jetweatherforecast.domain.repository.SearchRepository
 import com.bawp.jetweatherforecast.mappers.GeoLocationItemUIModelMapper
 import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
 import javax.inject.Inject

@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.domain
+package com.bawp.jetweatherforecast.domain.repository
 
 import com.bawp.jetweatherforecast.data.DataOrException
 import com.bawp.jetweatherforecast.model.weather.OneCallWeather

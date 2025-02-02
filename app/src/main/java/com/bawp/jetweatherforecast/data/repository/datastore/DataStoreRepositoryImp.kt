@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.datastore.core.DataStore
 import com.bawp.jetweatherforecast.GeoLocationStoreModel
 import com.bawp.jetweatherforecast.data.repository.search.SearchRepositoryImp
-import com.bawp.jetweatherforecast.domain.DataStoreRepository
+import com.bawp.jetweatherforecast.domain.repository.DataStoreRepository
 import com.bawp.jetweatherforecast.model.Favorite
 import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
 import kotlinx.coroutines.flow.Flow
