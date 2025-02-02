@@ -6,8 +6,8 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.bawp.jetweatherforecast.model.Favorite
-import com.bawp.jetweatherforecast.model.Unit
+import com.bawp.jetweatherforecast.data.model.favorite.Favorite
+import com.bawp.jetweatherforecast.data.model.favorite.Unit
 import kotlinx.coroutines.flow.Flow
 
 @Dao

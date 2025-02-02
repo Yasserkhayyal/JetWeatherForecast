@@ -24,7 +24,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.bawp.jetweatherforecast.R
-import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
+import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import com.bawp.jetweatherforecast.utils.formatDate
 import com.bawp.jetweatherforecast.utils.formatDateTime
 import com.bawp.jetweatherforecast.utils.formatDecimals

@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.domain.repository
 
 import com.bawp.jetweatherforecast.data.DataOrException
-import com.bawp.jetweatherforecast.model.weather.OneCallWeather
+import com.bawp.jetweatherforecast.data.model.weather.OneCallWeather
 
 interface WeatherRepository {
     suspend fun getWeather(lat: String, lon: String, units: String)

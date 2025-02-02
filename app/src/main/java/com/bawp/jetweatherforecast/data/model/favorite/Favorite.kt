@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.model
+package com.bawp.jetweatherforecast.data.model.favorite
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

@@ -47,8 +47,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.bawp.jetweatherforecast.model.Favorite
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.data.model.favorite.Favorite
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
 import com.bawp.jetweatherforecast.screens.favorites.FavoriteViewModel
 

@@ -42,7 +42,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
 import com.bawp.jetweatherforecast.widgets.WeatherAppBar
 

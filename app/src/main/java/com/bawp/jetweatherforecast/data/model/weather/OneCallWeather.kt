@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.model.weather
+package com.bawp.jetweatherforecast.data.model.weather
 
 data class OneCallWeather(
     val alerts: List<Alert>? = null,

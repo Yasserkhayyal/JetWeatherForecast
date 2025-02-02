@@ -37,9 +37,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
-import com.bawp.jetweatherforecast.model.locations.isNotEmpty
-import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.domain.model.locations.isNotEmpty
+import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
 import com.bawp.jetweatherforecast.screens.settings.SettingsViewModel
 import com.bawp.jetweatherforecast.utils.formatDate

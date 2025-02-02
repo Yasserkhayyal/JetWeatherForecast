@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.data.network
 
-import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
-import com.bawp.jetweatherforecast.model.weather.OneCallWeather
+import com.bawp.jetweatherforecast.data.model.locations.GeoLocationItem
+import com.bawp.jetweatherforecast.data.model.weather.OneCallWeather
 import com.bawp.jetweatherforecast.utils.Constants.API_KEY
 import retrofit2.http.GET
 import retrofit2.http.Query

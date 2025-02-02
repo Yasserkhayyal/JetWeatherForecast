@@ -1,8 +1,8 @@
 package com.bawp.jetweatherforecast.domain.usecase.datastore
 
 import com.bawp.jetweatherforecast.domain.repository.DataStoreRepository
-import com.bawp.jetweatherforecast.model.Favorite
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.data.model.favorite.Favorite
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

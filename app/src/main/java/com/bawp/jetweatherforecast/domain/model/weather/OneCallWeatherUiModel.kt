@@ -1,4 +1,6 @@
-package com.bawp.jetweatherforecast.model.weather
+package com.bawp.jetweatherforecast.domain.model.weather
+
+import com.bawp.jetweatherforecast.data.model.weather.OneCallWeather
 
 data class OneCallWeatherUiModel(
     val current: CurrentUiModel? = null,

@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.model.locations
+package com.bawp.jetweatherforecast.domain.model.locations
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

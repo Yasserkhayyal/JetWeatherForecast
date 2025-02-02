@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.bawp.jetweatherforecast.data.DataOrException
 import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
 import com.bawp.jetweatherforecast.domain.usecase.search.SearchUseCase
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

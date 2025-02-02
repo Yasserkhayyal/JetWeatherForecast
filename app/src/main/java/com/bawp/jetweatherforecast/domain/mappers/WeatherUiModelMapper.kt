@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.domain.mappers
 
-import com.bawp.jetweatherforecast.model.weather.OneCallWeather
-import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
+import com.bawp.jetweatherforecast.data.model.weather.OneCallWeather
+import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import javax.inject.Inject
 
 interface WeatherUiModelMapper {

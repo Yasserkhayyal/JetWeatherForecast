@@ -3,7 +3,7 @@ package com.bawp.jetweatherforecast.domain.usecase.weather
 import com.bawp.jetweatherforecast.data.DataOrException
 import com.bawp.jetweatherforecast.domain.repository.WeatherRepository
 import com.bawp.jetweatherforecast.domain.mappers.WeatherUiModelMapper
-import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
+import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import javax.inject.Inject
 
 interface WeatherDataUseCase {

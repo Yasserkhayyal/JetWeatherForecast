@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import com.bawp.jetweatherforecast.data.DataOrException
 import com.bawp.jetweatherforecast.domain.usecase.datastore.DataStoreUseCase
 import com.bawp.jetweatherforecast.domain.usecase.weather.WeatherDataUseCase
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
-import com.bawp.jetweatherforecast.model.weather.OneCallWeatherUiModel
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

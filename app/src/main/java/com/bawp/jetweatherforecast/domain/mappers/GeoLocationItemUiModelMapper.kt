@@ -1,7 +1,7 @@
 package com.bawp.jetweatherforecast.domain.mappers
 
-import com.bawp.jetweatherforecast.model.locations.GeoLocationItem
-import com.bawp.jetweatherforecast.model.locations.GeoLocationUiModel
+import com.bawp.jetweatherforecast.data.model.locations.GeoLocationItem
+import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import javax.inject.Inject
 
 interface GeoLocationItemUIModelMapper {

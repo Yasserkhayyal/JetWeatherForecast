@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.model.locations
+package com.bawp.jetweatherforecast.data.model.locations
 
 import com.google.gson.annotations.SerializedName
 
