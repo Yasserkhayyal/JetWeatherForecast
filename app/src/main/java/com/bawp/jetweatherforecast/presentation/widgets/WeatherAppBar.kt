@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.widgets
+package com.bawp.jetweatherforecast.presentation.widgets
 
 import android.content.Context
 import android.widget.Toast
@@ -50,7 +50,7 @@ import androidx.navigation.NavController
 import com.bawp.jetweatherforecast.data.model.favorite.Favorite
 import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
-import com.bawp.jetweatherforecast.screens.favorites.FavoriteViewModel
+import com.bawp.jetweatherforecast.presentation.screens.favorites.FavoriteViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

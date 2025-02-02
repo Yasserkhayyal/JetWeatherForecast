@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.widgets
+package com.bawp.jetweatherforecast.presentation.widgets
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -25,9 +25,9 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.bawp.jetweatherforecast.R
 import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
-import com.bawp.jetweatherforecast.utils.formatDate
-import com.bawp.jetweatherforecast.utils.formatDateTime
-import com.bawp.jetweatherforecast.utils.formatDecimals
+import com.bawp.jetweatherforecast.presentation.utils.formatDate
+import com.bawp.jetweatherforecast.presentation.utils.formatDateTime
+import com.bawp.jetweatherforecast.presentation.utils.formatDecimals
 
 
 @Composable

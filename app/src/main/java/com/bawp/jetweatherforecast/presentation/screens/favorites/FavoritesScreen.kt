@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.favorites
+package com.bawp.jetweatherforecast.presentation.screens.favorites
 
 import android.util.Log
 import androidx.compose.foundation.clickable
@@ -32,7 +32,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.bawp.jetweatherforecast.data.model.favorite.Favorite
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
-import com.bawp.jetweatherforecast.widgets.WeatherAppBar
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherAppBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

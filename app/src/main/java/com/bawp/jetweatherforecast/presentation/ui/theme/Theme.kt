@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.ui.theme
+package com.bawp.jetweatherforecast.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.utils
+package com.bawp.jetweatherforecast.presentation.utils
 
 object Constants {
     const val BASE_URL = "https://api.openweathermap.org/"

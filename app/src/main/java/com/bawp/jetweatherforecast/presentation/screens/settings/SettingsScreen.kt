@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.bawp.jetweatherforecast.screens.settings
+package com.bawp.jetweatherforecast.presentation.screens.settings
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.bawp.jetweatherforecast.widgets.WeatherAppBar
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherAppBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

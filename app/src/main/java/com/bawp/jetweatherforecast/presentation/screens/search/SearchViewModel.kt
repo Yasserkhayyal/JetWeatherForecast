@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.search
+package com.bawp.jetweatherforecast.presentation.screens.search
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

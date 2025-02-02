@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.main
+package com.bawp.jetweatherforecast.presentation.screens.main
 
 import android.util.Log
 import androidx.activity.compose.BackHandler
@@ -41,14 +41,14 @@ import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.domain.model.locations.isNotEmpty
 import com.bawp.jetweatherforecast.domain.model.weather.OneCallWeatherUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
-import com.bawp.jetweatherforecast.screens.settings.SettingsViewModel
-import com.bawp.jetweatherforecast.utils.formatDate
-import com.bawp.jetweatherforecast.utils.formatDecimals
-import com.bawp.jetweatherforecast.widgets.HumidityWindPressureRow
-import com.bawp.jetweatherforecast.widgets.SunsetSunRiseRow
-import com.bawp.jetweatherforecast.widgets.WeatherAppBar
-import com.bawp.jetweatherforecast.widgets.WeatherDetailRow
-import com.bawp.jetweatherforecast.widgets.WeatherStateImage
+import com.bawp.jetweatherforecast.presentation.screens.settings.SettingsViewModel
+import com.bawp.jetweatherforecast.presentation.utils.formatDate
+import com.bawp.jetweatherforecast.presentation.utils.formatDecimals
+import com.bawp.jetweatherforecast.presentation.widgets.HumidityWindPressureRow
+import com.bawp.jetweatherforecast.presentation.widgets.SunsetSunRiseRow
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherAppBar
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherDetailRow
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherStateImage
 
 @Composable
 fun MainScreen(

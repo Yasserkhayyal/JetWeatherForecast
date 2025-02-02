@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.favorites
+package com.bawp.jetweatherforecast.presentation.screens.favorites
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

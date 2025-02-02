@@ -6,14 +6,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.bawp.jetweatherforecast.screens.about.AboutScreen
-import com.bawp.jetweatherforecast.screens.favorites.FavoritesScreen
-import com.bawp.jetweatherforecast.screens.main.MainScreen
-import com.bawp.jetweatherforecast.screens.main.MainViewModel
-import com.bawp.jetweatherforecast.screens.search.SearchScreen
-import com.bawp.jetweatherforecast.screens.search.SearchViewModel
-import com.bawp.jetweatherforecast.screens.settings.SettingsScreen
-import com.bawp.jetweatherforecast.screens.splash.WeatherSplashScreen
+import com.bawp.jetweatherforecast.presentation.screens.about.AboutScreen
+import com.bawp.jetweatherforecast.presentation.screens.favorites.FavoritesScreen
+import com.bawp.jetweatherforecast.presentation.screens.main.MainScreen
+import com.bawp.jetweatherforecast.presentation.screens.main.MainViewModel
+import com.bawp.jetweatherforecast.presentation.screens.search.SearchScreen
+import com.bawp.jetweatherforecast.presentation.screens.search.SearchViewModel
+import com.bawp.jetweatherforecast.presentation.screens.settings.SettingsScreen
+import com.bawp.jetweatherforecast.presentation.screens.splash.WeatherSplashScreen
 
 @ExperimentalComposeUiApi
 @Composable

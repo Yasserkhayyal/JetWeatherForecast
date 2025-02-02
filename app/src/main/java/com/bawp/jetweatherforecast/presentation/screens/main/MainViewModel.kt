@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.main
+package com.bawp.jetweatherforecast.presentation.screens.main
 
 import androidx.lifecycle.ViewModel
 import com.bawp.jetweatherforecast.data.model.DataOrException

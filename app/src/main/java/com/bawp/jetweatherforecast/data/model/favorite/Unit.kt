@@ -4,7 +4,7 @@ import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.bawp.jetweatherforecast.utils.Constants.IMPERIAL
+import com.bawp.jetweatherforecast.presentation.utils.Constants.IMPERIAL
 
 @Entity(tableName = "settings_tbl")
 data class Unit(

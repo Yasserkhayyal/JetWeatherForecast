@@ -14,7 +14,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.bawp.jetweatherforecast.navigation.WeatherNavigation
-import com.bawp.jetweatherforecast.ui.theme.AppTheme
+import com.bawp.jetweatherforecast.presentation.ui.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @ExperimentalComposeUiApi

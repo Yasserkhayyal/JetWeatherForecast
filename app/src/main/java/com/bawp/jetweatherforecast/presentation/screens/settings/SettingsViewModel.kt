@@ -1,12 +1,12 @@
-package com.bawp.jetweatherforecast.screens.settings
+package com.bawp.jetweatherforecast.presentation.screens.settings
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bawp.jetweatherforecast.data.model.favorite.Unit
 import com.bawp.jetweatherforecast.data.repository.weather.WeatherDbRepository
-import com.bawp.jetweatherforecast.utils.Constants.IMPERIAL
-import com.bawp.jetweatherforecast.utils.Constants.METRIC
+import com.bawp.jetweatherforecast.presentation.utils.Constants.IMPERIAL
+import com.bawp.jetweatherforecast.presentation.utils.Constants.METRIC
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.about
+package com.bawp.jetweatherforecast.presentation.screens.about
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -19,7 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.navigation.NavController
 import com.bawp.jetweatherforecast.R
-import com.bawp.jetweatherforecast.widgets.WeatherAppBar
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherAppBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

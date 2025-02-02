@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.utils
+package com.bawp.jetweatherforecast.presentation.utils
 
 import java.text.SimpleDateFormat
 

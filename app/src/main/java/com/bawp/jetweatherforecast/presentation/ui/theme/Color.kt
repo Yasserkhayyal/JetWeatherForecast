@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.ui.theme
+package com.bawp.jetweatherforecast.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

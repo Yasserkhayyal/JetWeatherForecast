@@ -1,4 +1,4 @@
-package com.bawp.jetweatherforecast.screens.search
+package com.bawp.jetweatherforecast.presentation.screens.search
 
 import android.util.Log
 import androidx.compose.foundation.clickable
@@ -44,7 +44,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.bawp.jetweatherforecast.domain.model.locations.GeoLocationUiModel
 import com.bawp.jetweatherforecast.navigation.WeatherScreens
-import com.bawp.jetweatherforecast.widgets.WeatherAppBar
+import com.bawp.jetweatherforecast.presentation.widgets.WeatherAppBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @ExperimentalComposeUiApi
