@@ -95,7 +95,6 @@ fun CityRow(
                             }
                         }
                     }
-                navController.navigate(WeatherScreens.MainScreen.name)
             },
         shape = CircleShape.copy(topEnd = CornerSize(6.dp)),
         color = Color(0xFFB2DFDB)
