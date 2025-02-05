@@ -32,8 +32,8 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
-    fun insertUnit(isToggleButtonChecked: Boolean) = viewModelScope.launch {
-        val unit = if (isToggleButtonChecked) Unit(IMPERIAL) else Unit(METRIC)
+    fun insertUnit(isImperialUnitSelected: Boolean) = viewModelScope.launch {
+        val unit = if (isImperialUnitSelected) Unit(IMPERIAL) else Unit(METRIC)
         repository.insertUnit(unit)
     }
 

@@ -15,7 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -35,10 +35,9 @@ fun WeatherDetailRow(dailyWeather: OneCallWeatherUiModel.DailyUiModel) {
     with(dailyWeather) {
         Surface(
             Modifier
-                .padding(3.dp)
-                .fillMaxWidth(),
-            shape = CircleShape.copy(topEnd = CornerSize(6.dp)),
-            color = Color.White
+                .fillMaxWidth()
+                .padding(vertical = 16.dp),
+            shape = CircleShape.copy(topEnd = CornerSize(6.dp))
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -62,7 +61,7 @@ fun WeatherDetailRow(dailyWeather: OneCallWeatherUiModel.DailyUiModel) {
                         Surface(
                             modifier = Modifier.padding(0.dp),
                             shape = CircleShape,
-                            color = Color(0xFFFFC400)
+                            color = MaterialTheme.colorScheme.secondaryContainer
                         ) {
                             Text(
                                 description,
@@ -76,7 +75,7 @@ fun WeatherDetailRow(dailyWeather: OneCallWeatherUiModel.DailyUiModel) {
                     temp?.max?.let {
                         withStyle(
                             style = SpanStyle(
-                                color = Color.Blue.copy(alpha = 0.7f),
+                                color = MaterialTheme.colorScheme.primary,
                                 fontWeight = FontWeight.SemiBold
                             )
                         ) {
@@ -87,7 +86,7 @@ fun WeatherDetailRow(dailyWeather: OneCallWeatherUiModel.DailyUiModel) {
                     temp?.min?.let {
                         withStyle(
                             style = SpanStyle(
-                                color = Color.LightGray
+                                color = MaterialTheme.colorScheme.secondary
                             )
                         ) {
                             append(formatDecimals(temp.min) + "º")
@@ -106,7 +105,7 @@ fun SunsetSunRiseRow(current: OneCallWeatherUiModel.CurrentUiModel) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = 15.dp, bottom = 6.dp),
+                .padding(vertical = 16.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -115,7 +114,8 @@ fun SunsetSunRiseRow(current: OneCallWeatherUiModel.CurrentUiModel) {
                     Image(
                         painter = painterResource(id = R.drawable.sunrise),
                         contentDescription = "sunrise",
-                        modifier = Modifier.size(30.dp)
+                        modifier = Modifier.size(30.dp),
+                        colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onPrimaryContainer)
                     )
                     Text(
                         text = formatDateTime(sunrise),
@@ -133,7 +133,8 @@ fun SunsetSunRiseRow(current: OneCallWeatherUiModel.CurrentUiModel) {
                     Image(
                         painter = painterResource(id = R.drawable.sunset),
                         contentDescription = "sunset",
-                        modifier = Modifier.size(30.dp)
+                        modifier = Modifier.size(30.dp),
+                        colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onPrimaryContainer)
                     )
                 }
             }
@@ -149,49 +150,57 @@ fun HumidityWindPressureRow(
     with(current) {
         Row(
             modifier = Modifier
-                .padding(12.dp)
-                .fillMaxWidth(),
+                .fillMaxWidth()
+                .padding(vertical = 16.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             humidity?.let {
-                Row(modifier = Modifier.padding(4.dp)) {
+                Row {
                     Icon(
                         painter = painterResource(id = R.drawable.humidity),
                         contentDescription = "humidity icon",
-                        modifier = Modifier.size(20.dp)
+                        modifier = Modifier.size(20.dp),
+                        tint = MaterialTheme.colorScheme.onPrimaryContainer
                     )
                     Text(
                         text = "${humidity}%",
-                        style = MaterialTheme.typography.bodySmall
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(start = 4.dp)
                     )
                 }
             }
 
             pressure?.let {
                 Row {
-                    Icon(
-                        painter = painterResource(id = R.drawable.pressure),
-                        contentDescription = "pressure icon",
-                        modifier = Modifier.size(20.dp)
-                    )
                     Text(
                         text = "$pressure psi",
                         style = MaterialTheme.typography.bodySmall
+                    )
+                    Icon(
+                        painter = painterResource(id = R.drawable.pressure),
+                        contentDescription = "pressure icon",
+                        modifier = Modifier
+                            .size(20.dp)
+                            .padding(start = 4.dp),
+                        tint = MaterialTheme.colorScheme.onPrimaryContainer
                     )
                 }
             }
 
             windSpeed?.let {
                 Row {
-                    Icon(
-                        painter = painterResource(id = R.drawable.wind),
-                        contentDescription = "wind icon",
-                        modifier = Modifier.size(20.dp)
-                    )
                     Text(
                         text = "${formatDecimals(windSpeed)} " + if (isImperial) "mph" else "m/s",
                         style = MaterialTheme.typography.bodySmall
+                    )
+                    Icon(
+                        painter = painterResource(id = R.drawable.wind),
+                        contentDescription = "wind icon",
+                        modifier = Modifier
+                            .size(20.dp)
+                            .padding(start = 4.dp),
+                        tint = MaterialTheme.colorScheme.onPrimaryContainer
                     )
                 }
             }
@@ -208,5 +217,4 @@ fun WeatherStateImage(imageUrl: String) {
         contentDescription = "icon image",
         modifier = Modifier.size(80.dp)
     )
-
 }

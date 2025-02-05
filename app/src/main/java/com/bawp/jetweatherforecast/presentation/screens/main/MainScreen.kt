@@ -158,7 +158,6 @@ fun MainContent(modifier: Modifier, data: OneCallWeatherUiModel, isImperial: Boo
                 Text(
                     text = formatDate(dt), // Wed Nov 30
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSecondary,
                     fontWeight = FontWeight.SemiBold,
                     modifier = Modifier.padding(6.dp)
                 )
@@ -169,7 +168,7 @@ fun MainContent(modifier: Modifier, data: OneCallWeatherUiModel, isImperial: Boo
                     .padding(4.dp)
                     .size(200.dp),
                 shape = CircleShape,
-                color = Color(0xFFFFC400)
+                color = MaterialTheme.colorScheme.secondaryContainer
             ) {
                 val todayWeather = weather?.get(0)
                 Column(
@@ -196,7 +195,7 @@ fun MainContent(modifier: Modifier, data: OneCallWeatherUiModel, isImperial: Boo
                 }
             }
             HumidityWindPressureRow(current = this, isImperial = isImperial)
-            HorizontalDivider()
+            HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
             SunsetSunRiseRow(current = this)
         }
         if (!data.daily.isNullOrEmpty()) {

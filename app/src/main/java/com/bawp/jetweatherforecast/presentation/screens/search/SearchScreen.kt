@@ -62,7 +62,8 @@ fun SearchScreen(navController: NavController, viewModel: SearchViewModel) {
             ) {
                 navController.popBackStack()
             }
-        }) { contentPadding ->
+        }
+    ) { contentPadding ->
         Surface(modifier = Modifier.padding(contentPadding)) {
             Column(
                 verticalArrangement = Arrangement.Center,

@@ -6,8 +6,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.absolutePadding
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material.icons.Icons
@@ -24,6 +24,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MenuItemColors
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -183,31 +184,21 @@ fun ShowSettingDropDownMenu(
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentSize(Alignment.TopEnd)
-            .absolutePadding(top = 45.dp, right = 20.dp)
+            .padding(top = 45.dp, end = 20.dp)
     ) {
         DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },
             modifier = Modifier
                 .width(140.dp)
-                .background(Color.White)
+                .background(MaterialTheme.colorScheme.surfaceContainer)
         ) {
             items.forEachIndexed { _, text ->
                 DropdownMenuItem(
                     text = {
                         Text(
                             text = text,
-                            modifier = Modifier.clickable {
-                                navController.navigate(
-                                    when (text) {
-                                        "About" -> WeatherScreens.AboutScreen.name
-                                        "Favorites" -> WeatherScreens.FavoriteScreen.name
-                                        else -> WeatherScreens.SettingsScreen.name
-                                    }
-                                )
-
-
-                            }, fontWeight = FontWeight.W300
+                            fontWeight = FontWeight.W300,
                         )
                     },
                     leadingIcon = {
@@ -224,7 +215,26 @@ fun ShowSettingDropDownMenu(
                     onClick = {
                         expanded = false
                         showDialog.value = false
-                    }
+                        navController.navigate(
+                            when (text) {
+                                "About" -> WeatherScreens.AboutScreen.name
+                                "Favorites" -> WeatherScreens.FavoriteScreen.name
+                                else -> WeatherScreens.SettingsScreen.name
+                            }
+                        )
+                    },
+                    colors = MenuItemColors(
+                        textColor = MaterialTheme.colorScheme.onSurface,
+                        leadingIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                        trailingIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                        disabledTextColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f),
+                        disabledLeadingIconColor = MaterialTheme.colorScheme.onSurfaceVariant.copy(
+                            alpha = 0.38f
+                        ),
+                        disabledTrailingIconColor = MaterialTheme.colorScheme.onSurfaceVariant.copy(
+                            alpha = 0.38f
+                        ),
+                    )
                 )
             }
         }
