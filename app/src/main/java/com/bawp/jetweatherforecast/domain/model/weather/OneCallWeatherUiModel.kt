@@ -1,7 +1,5 @@
 package com.bawp.jetweatherforecast.domain.model.weather
 
-import com.bawp.jetweatherforecast.data.model.weather.OneCallWeather
-
 data class OneCallWeatherUiModel(
     val current: CurrentUiModel? = null,
     val daily: List<DailyUiModel>? = null
@@ -41,7 +39,7 @@ data class OneCallWeatherUiModel(
         val sunset: Int? = null, // 1684977332
         val temp: TempUiModel? = null,
         val uvi: Double? = null, // 9.23
-        val weather: List<OneCallWeather.Weather>? = null,
+        val weather: List<WeatherUiModel>? = null,
         val windDeg: Int? = null, // 76
         val windGust: Double? = null, // 8.92
         val windSpeed: Double? = null // 3.98
